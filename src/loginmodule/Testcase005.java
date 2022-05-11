@@ -38,14 +38,17 @@ public class Testcase005 {
 		String text = br.switchTo().alert().getText();
 		System.out.println(text);
 
-		if (text.contains("Invalid UserID")) {
+		if (text.equals("Invalid UserID")) {
 			System.out.println();
 			System.out.println("------------------------------");
-			System.out.println("Invalid UserID  message  displayed");
+			System.out.println("Test case 5 is pass");
 			} else
            {
-			System.out.println("Invalid UserID  message not displayed");
+			System.out.println("Test case 5 is fail");
 			}
+		br.switchTo().alert().accept();
+		br.quit();
+		
   }
 
 	}

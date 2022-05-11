@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
@@ -14,12 +15,12 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Findelementspractice {
 
-	public static String browser = "ie";
+	public static String browser = "edge";
 	public static WebDriver br;
 
-	public static void main(String[] args) throws InterruptedException {
+	
 		// TODO Auto-generated method stub
-
+ public void browsertesting() throws InterruptedException {
 		if (browser.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-notifications");
@@ -47,6 +48,14 @@ public class Findelementspractice {
 			br = new InternetExplorerDriver();
 			br.manage().window().maximize();
 		}
+
+		if (browser.equals("edge")) {
+			System.setProperty("webdriver.edge.driver",
+					"D:\\Seleniumwebdriver\\Browserexe\\edgedriver\\msedgedriver.exe");
+			br = new EdgeDriver();
+			br.manage().window().maximize();
+		}
+
 		// br.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		br.get("https://bsadar.github.io/hmrbuild1/Loging.html");
 
@@ -97,5 +106,5 @@ public class Findelementspractice {
 		System.out.println(title);
 		br.quit();
 
-	}
+ }
 }

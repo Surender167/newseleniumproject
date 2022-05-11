@@ -39,17 +39,20 @@ public class Testcase002 {
 		String text = br.switchTo().alert().getText();
 		System.out.println(text);
 
-		if (text.contains("Invalid Password")) {
+		if (text.equals("Invalid Password")) {
 			System.out.println();
 			System.out.println("------------------------------");
-			System.out.println("Invalid Password  message displayed");
+			System.out.println("Test case 2 pass");
 
 		} else
 
 		{
-			System.out.println("'Invalid Password  message not displayed");
+			System.out.println("Test case 2 fail");
 
 		}
+		
+		br.switchTo().alert().accept();
+		br.quit();
 
 	}
 

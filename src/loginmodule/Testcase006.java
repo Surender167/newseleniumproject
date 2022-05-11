@@ -33,8 +33,15 @@ public class Testcase006 {
 		Password.sendKeys("sadar");
 		WebElement reset = br.findElement(By.xpath("//input[@type='Reset']"));
 		reset.click();
+		String usernameafterclear = Username.getText();
+		if (usernameafterclear.equals("")) {
+			System.out.println("Testcase 6 is pass");
+		} else {
+			System.out.println("Testcase 6 is failed");
 
-		System.out.println("---------------------" + "\n" + "fielde are cleared");
+		}
+
+		br.quit();
 
 	}
 

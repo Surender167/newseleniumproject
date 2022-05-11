@@ -34,14 +34,18 @@ public class Testcase001 {
 		Password.sendKeys("sadar");
 		WebElement Login = br.findElement(By.xpath("//input[@type='button']"));
 		Login.click();
-		String pgesource = br.getPageSource();
-		System.out.println(pgesource);
-		if (pgesource.contains("Welcome to HMR")) {
+		String actresu = br.getTitle();
+		System.out.println(actresu);
+		if (actresu.equals("MainHMR")) {
 
 			System.out.println();
 			System.out.println("------------------------");
-			System.out.println("Welcome To HMR page displayed");
+			System.out.println("Test case 1 is pass");
 		}
-
+		else {
+			
+			System.out.println("Test case 1 is fail");
+		}
+		br.quit();
 	}
 }
