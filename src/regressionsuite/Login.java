@@ -5,15 +5,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Login {
-
+public class Login extends Repository{
+  //  String buildpath = "https://bsadar.github.io/hmrbuild1/Loging.html";
+	
+	String buildpath = super.buildpath ;
 	void testcase1() {
 
 		System.setProperty("webdriver.chrome.driver",
 				"D:\\Seleniumwebdriver\\Browserexe\\chromedriver_win32\\chromedriver.exe");
 		WebDriver br = new ChromeDriver();
 		br.manage().window().maximize();
-		br.get("https://bsadar.github.io/hmrbuild1/Loging.html");
+		br.get(buildpath);
 		String title = br.getTitle();
 		System.out.println(title);
 
@@ -54,7 +56,7 @@ public class Login {
 				"D:\\Seleniumwebdriver\\Browserexe\\chromedriver_win32\\chromedriver.exe");
 		WebDriver br = new ChromeDriver();
 		br.manage().window().maximize();
-		br.get("https://bsadar.github.io/hmrbuild1/Loging.html");
+		br.get(buildpath);
 		String title = br.getTitle();
 		System.out.println(title);
 		if (title.equals("HMR")) {
@@ -90,7 +92,7 @@ public class Login {
 				"D:\\Seleniumwebdriver\\Browserexe\\chromedriver_win32\\chromedriver.exe");
 		WebDriver br = new ChromeDriver();
 		br.manage().window().maximize();
-		br.get("https://bsadar.github.io/hmrbuild1/Loging.html");
+		br.get(buildpath);
 		String title = br.getTitle();
 		System.out.println(title);
 
@@ -131,7 +133,7 @@ public class Login {
 				"D:\\Seleniumwebdriver\\Browserexe\\chromedriver_win32\\chromedriver.exe");
 		WebDriver br = new ChromeDriver();
 		br.manage().window().maximize();
-		br.get("https://bsadar.github.io/hmrbuild1/Loging.html");
+		br.get(buildpath);
 		String title = br.getTitle();
 		System.out.println(title);
 
@@ -171,7 +173,7 @@ public class Login {
 				"D:\\Seleniumwebdriver\\Browserexe\\chromedriver_win32\\chromedriver.exe");
 		WebDriver br = new ChromeDriver();
 		br.manage().window().maximize();
-		br.get("https://bsadar.github.io/hmrbuild1/Loging.html");
+		br.get(buildpath);
 		String title = br.getTitle();
 		System.out.println(title);
 

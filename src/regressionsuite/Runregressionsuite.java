@@ -1,9 +1,8 @@
 package regressionsuite;
 
-import browsercommands.Findelementspractice;
 
 public class Runregressionsuite {
-
+    
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
@@ -13,8 +12,10 @@ public class Runregressionsuite {
 		lo.testcase3();
 		lo.testcase5();
 		lo.testcase6();
-		Findelementspractice fp = new Findelementspractice();
-		fp.browsertesting();
+		admin ad = new admin();
+		ad.test007();
+		ad.testcase008();
+		ad.tstcase010();
 	}
 
 }
