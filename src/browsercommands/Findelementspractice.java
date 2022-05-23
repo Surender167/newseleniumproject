@@ -18,9 +18,8 @@ public class Findelementspractice {
 	public static String browser = "edge";
 	public static WebDriver br;
 
-	
-		// TODO Auto-generated method stub
- public void browsertesting() throws InterruptedException {
+	// TODO Auto-generated method stub
+	public void browsertesting() throws InterruptedException {
 		if (browser.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-notifications");
@@ -105,7 +104,6 @@ public class Findelementspractice {
 		String title = br.getTitle();
 		System.out.println(title);
 		br.quit();
-		
 
- }
+	}
 }
