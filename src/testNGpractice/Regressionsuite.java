@@ -41,7 +41,7 @@ public class Regressionsuite {
 		String actresu = br.getTitle();
 		System.out.println(actresu);
 
-		Assert.assertEquals(actresu, "MainHMR");
+		Assert.assertEquals(actresu, "MainHMRR");
 
 	}
 
@@ -117,7 +117,7 @@ public class Regressionsuite {
 		Assert.assertEquals(usernameafterclear, "");
 	}
 
-	@Test(enabled = true, priority = 6, groups = "admin")
+	@Test(enabled = true, priority = 6, groups = "admin",dependsOnMethods="testcase1")
 	void testcase7() {
 
 		WebElement Username = br.findElement(By.name("id"));

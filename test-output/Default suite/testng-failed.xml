@@ -5,8 +5,9 @@
     <classes>
       <class name="testNGpractice.Regressionsuite">
         <methods>
-          <include name="testcase3"/>
+          <include name="testcase1"/>
           <include name="afterMethod"/>
+          <include name="testcase7"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- testNGpractice.Regressionsuite -->
