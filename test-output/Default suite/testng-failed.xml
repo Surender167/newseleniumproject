@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGpractice.Regressionsuite">
+      <class name="testNGpractice.Cbrtesting">
         <methods>
-          <include name="testcase1"/>
-          <include name="afterMethod"/>
-          <include name="testcase7"/>
-          <include name="beforeMethod"/>
+          <include name="beforemethod"/>
+          <include name="aftermethod"/>
+          <include name="CrB"/>
         </methods>
-      </class> <!-- testNGpractice.Regressionsuite -->
+      </class> <!-- testNGpractice.Cbrtesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

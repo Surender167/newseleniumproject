@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="firefoxtesting">
+		<parameter name="browser" value="ff" />
+        <parameter name="url" value="https://bsadar.github.io/hmrbuild1/Loging.html" />
+		<classes>
+			<class name="testNGpractice.Cbrtesting" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="chrometesting">
+		<parameter name="browser" value="gg" />
+         <parameter name="url" value="https://bsadar.github.io/hmrbuild1/Loging.html" /> 
+		<classes>
+			<class name="testNGpractice.Cbrtesting" />
+		</classes>
+	</test> <!-- Test -->
+	
+</suite> <!-- Suite -->
