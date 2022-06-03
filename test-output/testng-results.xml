@@ -2,68 +2,28 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-02T19:59:28 IST" name="Suite" finished-at="2022-06-02T19:59:53 IST" duration-ms="25508">
+  <suite started-at="2022-06-03T13:01:57 IST" name="Suite" finished-at="2022-06-03T13:02:13 IST" duration-ms="15803">
     <groups>
-      <group name="cross">
-        <method signature="Cbrtesting.CrB()[pri:0, instance:testNGpractice.Cbrtesting@7c24b813]" name="CrB" class="testNGpractice.Cbrtesting"/>
-        <method signature="Cbrtesting.CrB()[pri:0, instance:testNGpractice.Cbrtesting@7b36aa0c]" name="CrB" class="testNGpractice.Cbrtesting"/>
-      </group> <!-- cross -->
     </groups>
-    <test started-at="2022-06-02T19:59:28 IST" name="firefoxtesting" finished-at="2022-06-02T19:59:45 IST" duration-ms="17416">
-      <class name="testNGpractice.Cbrtesting">
-        <test-method is-config="true" signature="beforemethod(java.lang.String,java.lang.String)[pri:0, instance:testNGpractice.Cbrtesting@7c24b813]" started-at="2022-06-02T19:59:28 IST" name="beforemethod" finished-at="2022-06-02T19:59:42 IST" duration-ms="14395" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ff]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://bsadar.github.io/hmrbuild1/Loging.html]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-06-03T13:01:57 IST" name="parallel" finished-at="2022-06-03T13:02:13 IST" duration-ms="15803">
+      <class name="testNGpractice.Parallelbrowsing">
+        <test-method signature="Gchrome()[pri:0, instance:testNGpractice.Parallelbrowsing@1af2d44a]" started-at="2022-06-03T13:01:57 IST" name="Gchrome" finished-at="2022-06-03T13:02:03 IST" duration-ms="6069" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method signature="CrB()[pri:0, instance:testNGpractice.Cbrtesting@7c24b813]" started-at="2022-06-02T19:59:42 IST" name="CrB" finished-at="2022-06-02T19:59:43 IST" duration-ms="536" status="PASS">
+        </test-method> <!-- Gchrome -->
+        <test-method signature="firefox()[pri:0, instance:testNGpractice.Parallelbrowsing@1af2d44a]" started-at="2022-06-03T13:01:57 IST" name="firefox" finished-at="2022-06-03T13:02:11 IST" duration-ms="13787" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CrB -->
-        <test-method is-config="true" signature="aftermethod()[pri:0, instance:testNGpractice.Cbrtesting@7c24b813]" started-at="2022-06-02T19:59:43 IST" name="aftermethod" finished-at="2022-06-02T19:59:45 IST" duration-ms="2409" status="PASS">
+        </test-method> <!-- firefox -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:testNGpractice.Parallelbrowsing@1af2d44a]" started-at="2022-06-03T13:02:03 IST" name="aftermethod" finished-at="2022-06-03T13:02:03 IST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-      </class> <!-- testNGpractice.Cbrtesting -->
-    </test> <!-- firefoxtesting -->
-    <test started-at="2022-06-02T19:59:45 IST" name="chrometesting" finished-at="2022-06-02T19:59:53 IST" duration-ms="8013">
-      <class name="testNGpractice.Cbrtesting">
-        <test-method is-config="true" signature="beforemethod(java.lang.String,java.lang.String)[pri:0, instance:testNGpractice.Cbrtesting@7b36aa0c]" started-at="2022-06-02T19:59:45 IST" name="beforemethod" finished-at="2022-06-02T19:59:52 IST" duration-ms="6424" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[gg]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://bsadar.github.io/hmrbuild1/Loging.html]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method signature="CrB()[pri:0, instance:testNGpractice.Cbrtesting@7b36aa0c]" started-at="2022-06-02T19:59:52 IST" name="CrB" finished-at="2022-06-02T19:59:52 IST" duration-ms="355" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CrB -->
-        <test-method is-config="true" signature="aftermethod()[pri:0, instance:testNGpractice.Cbrtesting@7b36aa0c]" started-at="2022-06-02T19:59:52 IST" name="aftermethod" finished-at="2022-06-02T19:59:53 IST" duration-ms="1226" status="PASS">
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:testNGpractice.Parallelbrowsing@1af2d44a]" started-at="2022-06-03T13:02:11 IST" name="aftermethod" finished-at="2022-06-03T13:02:13 IST" duration-ms="1961" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-      </class> <!-- testNGpractice.Cbrtesting -->
-    </test> <!-- chrometesting -->
+      </class> <!-- testNGpractice.Parallelbrowsing -->
+    </test> <!-- parallel -->
   </suite> <!-- Suite -->
 </testng-results>

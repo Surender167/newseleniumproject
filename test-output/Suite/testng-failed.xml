@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="o(failed)">
-    <parameter name="browser" value="ie"/>
+  <test thread-count="5" parallel="methods" name="parallel(failed)">
+    <parameter name="Url" value="https://bsadar.github.io/hmrbuild1/Loging.html"/>
     <classes>
-      <class name="testNGpractice.Cbrtesting">
+      <class name="testNGpractice.Parallelbrowsing">
         <methods>
-          <include name="beforemethod"/>
           <include name="aftermethod"/>
-          <include name="CrB"/>
+          <include name="firefox"/>
         </methods>
-      </class> <!-- testNGpractice.Cbrtesting -->
+      </class> <!-- testNGpractice.Parallelbrowsing -->
     </classes>
-  </test> <!-- o(failed) -->
+  </test> <!-- parallel(failed) -->
 </suite> <!-- Failed suite [Suite] -->
